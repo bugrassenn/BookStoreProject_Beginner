@@ -31,7 +31,7 @@ namespace BookStore
             // Piece < 10 if no discount
             if ( piece < 10 )
             {
-                total = amount;
+                total = piece * 8;
             }
             
             // Piece >= 10 if %20 Discount
@@ -55,7 +55,7 @@ namespace BookStore
                 total = amount - discount;                
 
             }
-
+            kdvamount = 0;
             kdvamount += total * kdv;
             total += kdvamount;
 
